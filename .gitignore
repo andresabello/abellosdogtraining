@@ -83,3 +83,8 @@ wp-content/themes/twentytwentythree*/
 
 # Keep your custom theme
 !wp-content/themes/pibusiness/
+
+docker-compose.yml
+Dockerfile
+data/
+mysql/
