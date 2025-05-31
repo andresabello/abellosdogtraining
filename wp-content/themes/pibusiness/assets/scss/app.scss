@@ -1,0 +1,52 @@
+@import "theme-variables.scss";
+@import "variables.scss";
+@import "~bootstrap/scss/bootstrap";
+@import "menu";
+@import "footer";
+
+::-moz-selection {
+    background: $primary;
+    text-shadow: none;
+}
+
+::selection {
+    background: $primary;
+    text-shadow: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $black;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.phone {
+    font-size: 28px;
+    text-decoration: none !important;
+    transition: color .5s ease-in-out;
+    color: $white;
+
+    &:hover {
+        color: $danger;
+    }
+}
+
+.cta-content {
+    width: 50%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 991px) {
+    .cta-content {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .cta-content {
+        width: 100%;
+    }
+}

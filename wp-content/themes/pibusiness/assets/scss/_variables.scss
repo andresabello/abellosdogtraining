@@ -1,0 +1,55 @@
+@import "theme-variables";
+
+$blue: #2d3191;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #f3a6ac;
+$red: #ea636d;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #50AA20;
+$teal: #20c997;
+$cyan: #17a2b8;
+
+
+$white: #fff;
+$gray-100: #f5f9fc;
+$gray-200: #d8d8d8;
+$gray-300: #bfc4c7;
+$gray-400: #a7acaf;
+$gray-500: #8c9194;
+$gray-600: #696e71;
+$gray-700: #494e51;
+$gray-800: #3f4447;
+$gray-900: #262A39;
+$black: #333;
+
+$primary: $main-color;
+$secondary: $secondary-color-hex;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $secondary;
+$light: lighten($primary, 15);
+$dark: darken($primary, 30);
+
+
+$body-bg: $white;
+$body-color: $black;
+
+$btn-border-radius: 0;
+$btn-border-radius-lg: 0;
+$font-color: $gray-900;
+
+$navbar-padding-x: 0;
+$navbar-padding-y: 20px;
+
+$font-size-base: 21;
+$h5-font-size: 18px;
+$headings-font-weight: 700;
+$border-radius: 5px;
+$link-color: $red;
+$link-hover-color: $secondary;
+
+$font-family-sans-serif: $font-family-base, Helvetica, Arial, sans-serif;
+$headings-color: $white;

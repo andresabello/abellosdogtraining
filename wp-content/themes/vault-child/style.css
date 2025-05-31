@@ -1,0 +1,25 @@
+/*
+Theme Name:		 Vault Child
+Theme URI:		 https://vault.uicore.co/
+Description:	 Child theme for Vault - Multi-Purpose Elementor WordPress Theme
+Author:			 UiCore
+Author URI:		 https://uicore.co
+Template:		 vault
+Version:		 1.0.0
+Text Domain:	 vault
+*/
+
+/*
+    Add your custom styles here
+*/
+
+
+#cta-button .elementor-button-icon .far {
+    font-size: 30px !important;
+    margin-top: 6px !important;
+}
+
+.uicore-mobile-menu-wrapper:before, .uicore-navbar .uicore-header-wrapper:before, #uicore-back-to-top {
+    background-color: #1AABC4;
+	color: #fff !important;
+}

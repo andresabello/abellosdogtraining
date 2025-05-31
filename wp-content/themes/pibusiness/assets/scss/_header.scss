@@ -1,0 +1,62 @@
+@import "variables";
+
+#main-menu {
+
+    &.sticky {
+        width: 100%;
+        z-index: 9999;
+    }
+
+    #burger {
+        display: none;
+    }
+}
+
+.navbar-dark {
+    .navbar-nav {
+        .nav-link {
+            font-size: 16px;
+            line-height: 18px;
+            letter-spacing: 2px;
+            color: $white;
+            font-weight: lighter;
+        }
+
+        .nav-item {
+            .nav-link {
+                margin-right: 25px;
+            }
+
+            &:last-child {
+                .nav-link {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    #main-menu {
+        #burger {
+            display: none;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+    #main-menu {
+        #burger {
+            display: block;
+        }
+    }
+
+    .navbar-light {
+        .navbar-nav {
+            .nav-item {
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+version: '3.1'
+
+services:
+
+  mysql:
+    build:
+      context: ./mysql
+    platform: linux/x86_64
+    restart: always
+    ports:
+      - "${MYSQL_PORT}:3306"
+    volumes:
+      - ./data:/var/lib/mysql
+    networks:
+      - doggynet
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_NAME}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+
+  wordpress:
+    build: .
+    restart: always
+    ports:
+      - ${APP_PORT}:80
+    environment:
+      WORDPRESS_DB_HOST: mysql
+      WORDPRESS_DB_USER: ${MYSQL_USER}
+      WORDPRESS_DB_PASSWORD: ${MYSQL_PASSWORD}
+      WORDPRESS_DB_NAME: ${MYSQL_NAME}
+      WORDPRESS_DEBUG: 1
+    volumes:
+      - .:/var/www/html
+    networks:
+      - doggynet
+
+  mailhog:
+    image: mailhog/mailhog
+    restart: always
+    ports:
+      - ${MAILHOG_ACCESS_PORT}:8025
+      - ${MAILHOG_CONTAINER_PORT}:1025
+    networks:
+      - doggynet
+
+networks:
+  doggynet:
+    driver: bridge
+
+volumes:
+  data:

@@ -1,0 +1,214 @@
+/*
+Theme Name: PiBusiness
+Theme URI: http://www.piboutique.com/pibusiness
+Description: A Business Theme Created for Success Online.
+Version: 1.0
+Author: Andres Abello
+Author URI: https://andresabello.com
+*/
+
+.hero .hero-text h1, .hero .hero-text .h1, .hero .hero-text h2, .hero .hero-text .h2, .hero .hero-text h3, .hero .hero-text .h3, .hero .hero-text h4, .hero .hero-text .h4 {
+	color: rgb(35, 44, 51) !important;
+}
+
+.bg-1 {
+	background-color: rgb(244, 241, 236) !important;
+}
+
+.bg-3 {
+	background-color: #ebe5dc !important;
+}
+
+.nav-tabs {
+    margin-bottom: 40px !important;
+}
+
+.nav-tabs .nav-link {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+	font-size: 20px !important;
+}
+
+.img-wrapper .img {
+    border-radius: 0 !important;
+}
+
+
+.img-wrapper .img-overlay {
+    border-radius: 0 !important;
+    background: transparent !important;
+}
+
+#mc-embedded-subscribe{
+	height: 50px !important;
+    font-size: 21px !important;
+    background-color: #f3a6ac !important;
+    margin-top: 30px !important;
+}
+
+#mce-EMAIL {
+	width: 100% !important;
+    height: 50px !important;
+    font-size: 21px !important;
+}
+
+.list-title{
+	font-size: 4.25em;
+}
+
+.list-subtitle {
+	font-size: 2em;
+}
+
+.youtube-player {
+	min-height: 450px;
+}
+
+.hero .hero-text h1, .hero .hero-text .h1 {
+	font-size: 4em !important;
+}
+
+h1, .h1 {
+    font-size: 64px !important;
+}
+
+h2, .h2 {
+	font-size: 54px !important;
+}
+
+
+.lead {
+	font-size: 1.2em !important;
+	font-weight: bold !important;
+}
+
+.text-hero {
+	font-size: 3.5em;
+}
+
+#main-menu .logo-wrapper img {
+    transition: opacity .5s ease-in-out !important;
+    height: 150px !important;
+	opacity: 1 !important;
+}
+
+
+.shadow-drop-center {
+	-webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1200px) {	
+	.hero .hero-text h1, .hero .hero-text .h1 {
+		font-size: 5em !important;
+	}
+}
+
+
+
+@media screen and (max-width: 991px) {	
+	.img-wrapper {
+    	display: block !important;
+		height: 366px !important;
+	}
+	
+	.img-wrapper .img-overlay {
+		height: 400px !important;
+	}
+	
+	.img-wrapper .img {
+		width:57% !important;
+	}
+	
+	.home-video {
+		width: 75%;
+		max-width: 300px;
+    }
+	
+	.list-title{
+		font-size: 2em;
+	}
+	
+	
+	.list-subtitle {
+		font-size: 1.125em;
+	}
+	
+	.text-hero {
+		font-size: 1.5em;
+	}
+	
+	.hero .hero-text h1, .hero .hero-text .h1 {
+	   font-size: 2em !important;
+	}
+	
+	h1, .h1 {
+    	font-size: 36px !important;
+	}
+	
+	h2, .h2 {
+    	font-size: 28px !important;
+	}
+	
+	#mc_embed_signup input.button {
+		width: 190px !important;
+	}
+
+}
+
+@media screen and (max-width: 891px) {	
+	.img-wrapper {
+    	display: block !important;
+	}
+}
+
+
+@media screen and (max-width: 478px) {
+	
+	.img-wrapper .img {
+		width:100% !important;
+	}
+	
+	.home-video {
+		width: 75%;
+		max-width: 280px;
+    }
+	
+	.list-title{
+		font-size: 1.25em;
+	}
+	
+	.list-subtitle{
+		font-size: 1em;
+	}
+	
+	.youtube-player {
+		min-height: 250px;
+	}
+	
+	.hero .hero-text h1, .hero .hero-text .h1 {
+	   font-size: 32px !important;
+	}
+}

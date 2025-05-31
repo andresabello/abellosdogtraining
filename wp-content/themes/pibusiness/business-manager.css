@@ -1,0 +1,11 @@
+/*ADMIN STYLES*/
+.business-manager-extras div{
+	margin: 10px;
+}
+.business-manager-extras div label{
+	width: 100px;
+	float: left;
+}
+.business-manager-extras div input{
+	width: 200px;
+}
